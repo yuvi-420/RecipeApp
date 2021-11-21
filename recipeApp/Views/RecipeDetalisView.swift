@@ -31,11 +31,11 @@ struct RecipeDetalisView: View {
                         .font(.headline)
                         .padding([.top,.bottom],5)
                     
-                    ForEach (recipe.ingredients, id:\.self) {
+                    ForEach (recipe.ingredients) {
                         
                         item in
                         
-                        Text(". " + item)
+                        Text(". " + item.name)
                     }
                         
 //                        Divider()

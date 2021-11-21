@@ -11,7 +11,7 @@ struct ReciepeTabView: View {
     var body: some View {
        
         TabView{
-            Text("Featured View")
+            RecipeFeaturedView()
                 .tabItem {
                     VStack {
                         Image(systemName: "star.fill")
@@ -29,6 +29,7 @@ struct ReciepeTabView: View {
                 }
          
         }
+        .environmentObject(RecipeModel())
         
     }
 }
